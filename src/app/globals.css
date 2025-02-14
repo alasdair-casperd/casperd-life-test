@@ -2,20 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+h1 {
+  font-size: 30pt;
+  line-height: 33pt;
+
+  @apply font-bold
+  pb-3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h2 {
+  font-size: 30pt;
+  line-height: 33pt;
+
+  @apply font-bold
+  pb-3;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h3 {
+  font-size: 20pt;
+  font-weight: bold;
+
+  @apply mt-12
+  mb-5;
+}
+
+h4 {
+  font-size: 14pt;
+
+  @apply font-bold
+  my-1;
+}
+
+p {
+  @apply mb-8;
+}
+
+a {
+  @apply font-bold
+  cursor-pointer;
+}
+
+.primary-button {
+  @apply bg-accent
+  text-white
+  font-bold
+  p-3
+  text-center
+  rounded-[12px]
+  cursor-pointer;
+}
+
+.primary-button.disabled {
+  @apply cursor-auto
+  opacity-50;
+}
+
+.secondary-button {
+  @apply bg-base-100
+  text-base-800
+  font-bold
+  p-3
+  text-center
+  rounded-[12px]
+  cursor-pointer;
+}
+
+.primary-button.full-width,
+.secondary-button.full-width {
+  @apply w-full;
 }
