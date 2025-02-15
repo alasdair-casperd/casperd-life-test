@@ -22,7 +22,7 @@ export function ExperienceToggle({
   return (
     <div className="flex flex-row items-center gap-4">
       <div
-        className="w-full flex flex-row-reverse items-center justify-between gap-4 cursor-pointer bg-white border-2 border-base-200 p-5 rounded-xl group hover:bg-base-50 duration-150 relative"
+        className="w-full flex flex-row-reverse items-center justify-between gap-4 cursor-pointer bg-white border border-base-200 p-5 rounded-xl group hover:bg-base-50 duration-150 relative"
         onClick={toggleExperience}
       >
         <div
