@@ -19,16 +19,16 @@ export function ExperienceHighlight({ experience, checked, frequency }: Props) {
         <div className="flex flex-row items-center gap-3">
           <div
             className={`${
-              checked ? "bg-accent" : "bg-base-200"
+              checked ? "bg-accent-400" : "bg-base-200"
             } w-5 h-5 rounded-md flex items-center justify-center p-1 duration-150`}
           >
             {checked && <IconCheck className="stroke-white stroke-[3px]" />}
-            {!checked && <IconX className="stroke-accent stroke-[3px]" />}
+            {!checked && <IconX className="stroke-accent-400 stroke-[3px]" />}
           </div>
           <span className="font-semibold">{experience.description.past}</span>
         </div>
         <div className="flex flex-row justify-start gap-4">
-          <div className="font-bold text-accent">
+          <div className="font-bold text-accent-400">
             {(100 * frequency).toFixed(0)}% of users
           </div>
         </div>

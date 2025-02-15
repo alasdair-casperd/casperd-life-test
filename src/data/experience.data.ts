@@ -15,8 +15,8 @@ export const experiences: Experience[] = [
     id: 4,
     category: categories.hardship,
     description: {
-      imperative: "categories.travel in an ambulance",
-      past: "categories.travelled in an ambulance",
+      imperative: "Travel in an ambulance",
+      past: "Travelled in an ambulance",
     },
     details: "",
   },
@@ -42,8 +42,8 @@ export const experiences: Experience[] = [
     id: 0,
     category: categories.travel,
     description: {
-      imperative: "categories.travel abroad alone",
-      past: "categories.travelled abroad alone",
+      imperative: "Travel abroad alone",
+      past: "Travelled abroad alone",
     },
     details: "",
   },
@@ -273,8 +273,8 @@ export const experiences: Experience[] = [
     id: 2,
     category: categories.travel,
     description: {
-      imperative: "categories.travel by sleeper train",
-      past: "categories.travelled by sleeper train",
+      imperative: "Travel by sleeper train",
+      past: "Travelled by sleeper train",
     },
     details: "",
   },

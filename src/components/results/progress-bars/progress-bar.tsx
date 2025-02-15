@@ -22,7 +22,7 @@ export function ProgressBar({ children, progress, className }: Props) {
       </div>
       {progress > 0 && (
         <div
-          className="absolute left-0 top-0 bg-accent h-full overflow-hidden z-20"
+          className="absolute left-0 top-0 bg-accent-400 h-full overflow-hidden z-20"
           style={{ width: Math.round(progress * 100).toString() + "%" }}
         >
           <div className="ml-4 top-0 h-full flex flex-col justify-center text-lg font-bold z-50 text-base-100">

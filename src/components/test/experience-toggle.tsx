@@ -27,7 +27,7 @@ export function ExperienceToggle({
       >
         <div
           className={`${
-            completed ? "bg-accent" : "bg-base-100"
+            completed ? "bg-accent-400" : "bg-base-100"
           } w-6 h-6 rounded-md flex items-center justify-center p-1 duration-150`}
         >
           {completed && <IconCheck className="stroke-white stroke-[5px]" />}

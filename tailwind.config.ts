@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#7a6ff2",
+        accent: colors.teal,
         base: colors.gray,
         page_background: colors.gray[100],
       },

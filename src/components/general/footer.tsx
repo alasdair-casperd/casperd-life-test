@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <div className="group pt-8 pb-12 w-full flex flex-col items-center justify-center gap-4 bg-base-950 text-white">
       <Link href="/">
-        <IconDiamonds className="text-accent w-8 h-8" />
+        <IconDiamonds className="text-accent-400 w-8 h-8" />
       </Link>
 
       <div className="text-base-100 text-xs flex sm:flex-row gap-8 justify-center items-center flex-col sm:gap-4 sm:my-4">
