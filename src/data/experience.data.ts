@@ -1,17 +1,10 @@
 import { Experience } from "@/types/experience";
-import {
-  achievements,
-  activity,
-  hardship,
-  love,
-  skills,
-  travel,
-} from "./category.data";
+import { categories } from "./category.data";
 
 export const experiences: Experience[] = [
   {
     id: 1,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Live in a foreign country",
       past: "Lived in a foreign country",
@@ -20,16 +13,16 @@ export const experiences: Experience[] = [
   },
   {
     id: 4,
-    category: hardship,
+    category: categories.hardship,
     description: {
-      imperative: "Travel in an ambulance",
-      past: "Travelled in an ambulance",
+      imperative: "categories.travel in an ambulance",
+      past: "categories.travelled in an ambulance",
     },
     details: "",
   },
   {
     id: 5,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "See the northern lights",
       past: "Seen the northern lights",
@@ -38,7 +31,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 6,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Get fired from a job",
       past: "Been fired from a job",
@@ -47,22 +40,22 @@ export const experiences: Experience[] = [
   },
   {
     id: 0,
-    category: travel,
+    category: categories.travel,
     description: {
-      imperative: "Travel abroad alone",
-      past: "Travelled abroad alone",
+      imperative: "categories.travel abroad alone",
+      past: "categories.travelled abroad alone",
     },
     details: "",
   },
   {
     id: 8,
-    category: achievements,
+    category: categories.achievements,
     description: { imperative: "Buy a property", past: "Bought a property" },
     details: "",
   },
   {
     id: 9,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Cast a vote in an election",
       past: "Cast a vote in an election",
@@ -71,7 +64,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 10,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Perform something on a musical instrument",
       past: "Performed something on a musical instrument",
@@ -80,7 +73,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 11,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Converse in a language not your own",
       past: "Conversed in a language not your own",
@@ -89,7 +82,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 12,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Win a game of chess",
       past: "Won a game of chess",
@@ -98,7 +91,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 13,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Grow a vegetable or fruit",
       past: "Grown a vegetable or a fruit",
@@ -107,13 +100,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 14,
-    category: skills,
+    category: categories.skills,
     description: { imperative: "Write a poem", past: "Written a poem" },
     details: "",
   },
   {
     id: 15,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Perform in a piece of theatre",
       past: "Performed in a piece of theatre",
@@ -122,13 +115,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 16,
-    category: skills,
+    category: categories.skills,
     description: { imperative: "Bake a cake", past: "Baked a cake" },
     details: "",
   },
   {
     id: 17,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Knit or crochet an item of clothing",
       past: "Knitted or crocheted an item of clothing",
@@ -137,7 +130,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 18,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Learn the lyrics to a song",
       past: "Learnt the lyrics to a song",
@@ -146,43 +139,46 @@ export const experiences: Experience[] = [
   },
   {
     id: 19,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Attend karaoke", past: "Attended karaoke" },
     details: "",
   },
   {
     id: 20,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Meet a celebrity", past: "Met a celebrity" },
     details: "",
   },
   {
     id: 21,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Paint a painting", past: "Painted a painting" },
     details: "",
   },
   {
     id: 22,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Ride a bike", past: "Ridden a bike" },
     details: "",
   },
   {
     id: 23,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Drive a car", past: "Driven a car" },
     details: "",
   },
   {
     id: 24,
-    category: travel,
-    description: { imperative: "Travel by boat", past: "Traveled by boat" },
+    category: categories.travel,
+    description: {
+      imperative: "categories.travel by boat",
+      past: "categories.traveled by boat",
+    },
     details: "",
   },
   {
     id: 25,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Drive something significantly larger than a car",
       past: "Driven something significantly larger than a car",
@@ -191,7 +187,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 26,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Spend a night in a tent",
       past: "Spent a night in a tent",
@@ -200,7 +196,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 27,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Attend a live professional sporting event",
       past: "Attended a live professional sporting event",
@@ -209,7 +205,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 28,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "See a film in the cinema",
       past: "Seen a film in the cinema",
@@ -218,13 +214,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 29,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Climb a tree", past: "Climbed a tree" },
     details: "",
   },
   {
     id: 30,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Make a den or pillow fort",
       past: "Made a den or a pillow fort",
@@ -233,7 +229,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 31,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Play a video game",
       past: "Played a video game",
@@ -242,7 +238,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 32,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Play a board game",
       past: "Played a board game",
@@ -251,13 +247,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 33,
-    category: love,
+    category: categories.love,
     description: { imperative: "Have a child", past: "Had a child" },
     details: "",
   },
   {
     id: 34,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Enter a romantic relationship",
       past: "Entered a romantic relationship",
@@ -266,7 +262,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 35,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Initiate a breakup",
       past: "Initiated a breakup",
@@ -275,16 +271,16 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
-    category: travel,
+    category: categories.travel,
     description: {
-      imperative: "Travel by sleeper train",
-      past: "Travelled by sleeper train",
+      imperative: "categories.travel by sleeper train",
+      past: "categories.travelled by sleeper train",
     },
     details: "",
   },
   {
     id: 36,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Get broken up with",
       past: "Been broken up with",
@@ -293,7 +289,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 37,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Be a best person, main of honour or equivalent",
       past: "Been a best man, maid of honour or equivalent",
@@ -302,7 +298,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 38,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Live with friends",
       past: "Lived with friends",
@@ -311,7 +307,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 39,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Live with a partner",
       past: "Lived with a partner",
@@ -320,25 +316,28 @@ export const experiences: Experience[] = [
   },
   {
     id: 40,
-    category: hardship,
-    description: { imperative: "Lose a loved one", past: "Lost a loved one" },
+    category: categories.hardship,
+    description: {
+      imperative: "Lose a categories.loved one",
+      past: "Lost a categories.loved one",
+    },
     details: "",
   },
   {
     id: 41,
-    category: love,
+    category: categories.love,
     description: { imperative: "Hold a baby", past: "Held a baby" },
     details: "",
   },
   {
     id: 42,
-    category: hardship,
+    category: categories.hardship,
     description: { imperative: "See someone die", past: "Seen someone die" },
     details: "",
   },
   {
     id: 43,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Attend a friend's wedding",
       past: "Attended a friend's wedding",
@@ -347,32 +346,33 @@ export const experiences: Experience[] = [
   },
   {
     id: 44,
-    category: love,
+    category: categories.love,
     description: { imperative: "Attend a funeral", past: "Attended a funeral" },
     details: "",
   },
   {
     id: 45,
-    category: love,
+    category: categories.love,
     description: {
-      imperative: "Confess your love to someone outside of a relationship",
-      past: "Confessed your love to someone outside of a relationship",
+      imperative:
+        "Confess your categories.love to someone outside of a relationship",
+      past: "Confessed your categories.love to someone outside of a relationship",
     },
     details: "",
   },
   {
     id: 46,
-    category: love,
+    category: categories.love,
     description: {
       imperative:
-        "Have someone confess their love to you outside of a relationship",
-      past: "Had someone confess their love to you outside a relationship",
+        "Have someone confess their categories.love to you outside of a relationship",
+      past: "Had someone confess their categories.love to you outside a relationship",
     },
     details: "",
   },
   {
     id: 47,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Have sexual intercourse",
       past: "Had sexual intercourse",
@@ -381,7 +381,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 48,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Throw or be the victim of a surprise party",
       past: "Thrown or been the victim of a surprise party",
@@ -390,7 +390,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 50,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Get burgled or mugged",
       past: "Been burgled or mugged",
@@ -399,25 +399,25 @@ export const experiences: Experience[] = [
   },
   {
     id: 51,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Get a tattoo", past: "Got a tattoo" },
     details: "",
   },
   {
     id: 52,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Get a piercing", past: "Got a piercing" },
     details: "",
   },
   {
     id: 53,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Dye your hair", past: "Dyed your hair" },
     details: "",
   },
   {
     id: 54,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Be involved in a road-traffic accident",
       past: "Been involved in a road traffic accident",
@@ -426,19 +426,19 @@ export const experiences: Experience[] = [
   },
   {
     id: 55,
-    category: hardship,
+    category: categories.hardship,
     description: { imperative: "Crash a car", past: "Crashed a car" },
     details: "",
   },
   {
     id: 56,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Become drunk", past: "Become drunk" },
     details: "",
   },
   {
     id: 57,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Win a prize at a fairground, carnival or similar",
       past: "Won a prize at a fairground, carnival or similar",
@@ -447,7 +447,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 58,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Send a hand-written letter or postcard",
       past: "Sent a hand-written letter or postcard",
@@ -456,13 +456,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 59,
-    category: travel,
+    category: categories.travel,
     description: { imperative: "Live in a city", past: "Lived in a city" },
     details: "",
   },
   {
     id: 60,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Live in the countryside",
       past: "Lived in the countryside",
@@ -471,7 +471,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 7,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Receive a promotion",
       past: "Received a promotion",
@@ -480,7 +480,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 61,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Get arrested or questioned by the police",
       past: "Been arrested or questioned by the police",
@@ -489,19 +489,19 @@ export const experiences: Experience[] = [
   },
   {
     id: 62,
-    category: skills,
+    category: categories.skills,
     description: { imperative: "Care for a plant", past: "Cared for a plant" },
     details: "",
   },
   {
     id: 63,
-    category: achievements,
+    category: categories.achievements,
     description: { imperative: "Give a speech", past: "Given a speech" },
     details: "",
   },
   {
     id: 64,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Be chased by a wild animal",
       past: "Been chased by a wild animal",
@@ -510,7 +510,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 65,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Be on the national news",
       past: "Been on the national news",
@@ -519,7 +519,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 66,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Cook a meal for many people",
       past: "Cooked a meal for many people",
@@ -528,7 +528,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 67,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Be involved in a fist fight",
       past: "Been involved in a fist fight",
@@ -537,25 +537,25 @@ export const experiences: Experience[] = [
   },
   {
     id: 68,
-    category: skills,
+    category: categories.skills,
     description: { imperative: "Read a book", past: "Read a book" },
     details: "",
   },
   {
     id: 69,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Climb a mountain", past: "Climbed a mountain" },
     details: "",
   },
   {
     id: 70,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Swim in the sea", past: "Swam in the sea" },
     details: "",
   },
   {
     id: 71,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Cry over a film as an adult",
       past: "Cried over a film as an adult",
@@ -564,13 +564,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 72,
-    category: achievements,
+    category: categories.achievements,
     description: { imperative: "Own a pet", past: "Owned a pet" },
     details: "",
   },
   {
     id: 74,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Take a dance class",
       past: "Taken a dance class",
@@ -579,7 +579,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 75,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "See an opera or a ballet",
       past: "Seen an opera or a ballet",
@@ -588,7 +588,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 76,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Serenade someone or be serenaded",
       past: "Serenaded someone or been serenaded",
@@ -597,7 +597,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 77,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Change a lightbulb",
       past: "Changed a lightbulb",
@@ -606,13 +606,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 78,
-    category: hardship,
+    category: categories.hardship,
     description: { imperative: "Have surgery", past: "Had surgery" },
     details: "",
   },
   {
     id: 79,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Experience a hallucination",
       past: "Experienced a hallucination",
@@ -621,37 +621,37 @@ export const experiences: Experience[] = [
   },
   {
     id: 80,
-    category: travel,
+    category: categories.travel,
     description: { imperative: "Have a lucid dream", past: "Had  lucid dream" },
     details: "",
   },
   {
     id: 81,
-    category: hardship,
+    category: categories.hardship,
     description: { imperative: "Break a bone", past: "Broken a bone" },
     details: "",
   },
   {
     id: 82,
-    category: skills,
+    category: categories.skills,
     description: { imperative: "Write a book", past: "Written a book" },
     details: "",
   },
   {
     id: 83,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Run a marathon", past: "Ran a marathon" },
     details: "",
   },
   {
     id: 84,
-    category: achievements,
+    category: categories.achievements,
     description: { imperative: "Save a life", past: "Saved a life" },
     details: "",
   },
   {
     id: 85,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Refer to an authority figure as 'mum' or 'dad'",
       past: "Referred to an authority figure as 'mum' or 'dad'",
@@ -660,7 +660,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 86,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Watch a sunset or a sunrise",
       past: "Watched a sunset or a sunrise",
@@ -669,13 +669,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 87,
-    category: love,
+    category: categories.love,
     description: { imperative: "Get married", past: "Been married" },
     details: "",
   },
   {
     id: 88,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Pull a complete all-nighter",
       past: "Pulled a complete all-nighter",
@@ -684,19 +684,19 @@ export const experiences: Experience[] = [
   },
   {
     id: 89,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Break a window", past: "Broken a window" },
     details: "",
   },
   {
     id: 90,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Make a snowman", past: "Made a snowman" },
     details: "",
   },
   {
     id: 91,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Experience an earthquake or other natural disaster",
       past: "Experienced an earthquake or other natural disaster",
@@ -705,7 +705,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 92,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Intentionally trigger a fire alarm",
       past: "Triggered a fire alarm on purpose",
@@ -714,13 +714,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 93,
-    category: achievements,
+    category: categories.achievements,
     description: { imperative: "Dig a large hole", past: "Dug a large hole" },
     details: "",
   },
   {
     id: 94,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative:
         "Walk into a mirror or glass door you didn't realise was there",
@@ -730,13 +730,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 95,
-    category: achievements,
+    category: categories.achievements,
     description: { imperative: "Paint a wall", past: "Painted a wall" },
     details: "",
   },
   {
     id: 96,
-    category: love,
+    category: categories.love,
     description: {
       imperative:
         "Cry on someone's shoulder, or have someone cry on your shoulder",
@@ -746,7 +746,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 97,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Stand in a cupboard and close the door",
       past: "Stood in a cupboard and closed the door",
@@ -755,7 +755,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 98,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Set off a firework",
       past: "Set off a firework",
@@ -764,7 +764,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 99,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Take a picture of a stranger as a favour",
       past: "Took a picture of a stranger as a favour",
@@ -773,7 +773,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 100,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Give money to a beggar",
       past: "Given money to a beggar",
@@ -782,7 +782,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 101,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "Donate to charity",
       past: "Donated to charity",
@@ -791,7 +791,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 102,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Make food for a stranger",
       past: "Made food for a stranger",
@@ -800,13 +800,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 103,
-    category: hardship,
+    category: categories.hardship,
     description: { imperative: "Be homeless", past: "Been homeless" },
     details: "",
   },
   {
     id: 104,
-    category: love,
+    category: categories.love,
     description: {
       imperative: "Set two people up in a successful relationship",
       past: "Set two people up in a successful relationship",
@@ -815,7 +815,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 105,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Get bitten or stung by an animal",
       past: "Been bitten or stung by an animal",
@@ -824,13 +824,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 106,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Ride a horse", past: "Ridden a horse" },
     details: "",
   },
   {
     id: 107,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Make a piece of pottery",
       past: "Made a piece of pottery",
@@ -839,7 +839,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 108,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Fall overboard from a ship",
       past: "Fallen overboard from a ship",
@@ -848,7 +848,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 109,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Bunk off school or work",
       past: "Bunked off school or work",
@@ -857,7 +857,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 110,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Go skinny dipping",
       past: "Gone skinny dipping",
@@ -866,13 +866,13 @@ export const experiences: Experience[] = [
   },
   {
     id: 111,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Sleep in a tree", past: "Slept in a tree" },
     details: "",
   },
   {
     id: 112,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Prank call someone",
       past: "Prank called someone",
@@ -881,7 +881,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 113,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Lock yourself out of your home or car",
       past: "Locked yourself out of your home or car",
@@ -890,7 +890,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 114,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Get kicked out a venue or other establishment",
       past: "Been kicked out a venue or other establishment",
@@ -899,7 +899,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 115,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Cook on an open fire",
       past: "Cooked on an open fire",
@@ -908,7 +908,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 116,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Sing or dance in front of an audience",
       past: "Sung or danced in front of an audience",
@@ -917,7 +917,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 117,
-    category: achievements,
+    category: categories.achievements,
     description: {
       imperative: "File for bankruptcy",
       past: "Filed for bankruptcy",
@@ -926,7 +926,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 118,
-    category: skills,
+    category: categories.skills,
     description: {
       imperative: "Sell something of your own making",
       past: "Sold something of your own making",
@@ -935,19 +935,19 @@ export const experiences: Experience[] = [
   },
   {
     id: 119,
-    category: hardship,
+    category: categories.hardship,
     description: { imperative: "Go to court", past: "Been to court" },
     details: "",
   },
   {
     id: 120,
-    category: activity,
+    category: categories.activity,
     description: { imperative: "Fire a gun", past: "Fired a gun" },
     details: "",
   },
   {
     id: 121,
-    category: activity,
+    category: categories.activity,
     description: {
       imperative: "Go to a music festival",
       past: "Been to a music festival",
@@ -956,7 +956,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 122,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Participate in a protest",
       past: "Participated in a protest",
@@ -965,19 +965,19 @@ export const experiences: Experience[] = [
   },
   {
     id: 123,
-    category: skills,
+    category: categories.skills,
     description: { imperative: "Fix a bike", past: "Fixed a bike" },
     details: "",
   },
   {
     id: 124,
-    category: travel,
+    category: categories.travel,
     description: { imperative: "Feed an animal", past: "Fed an animal" },
     details: "",
   },
   {
     id: 125,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "See a comet or shooting star",
       past: "Seen a comet or shooting star",
@@ -986,7 +986,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 126,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Miss a train or a flight",
       past: "Missed a train or a flight",
@@ -995,7 +995,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 127,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Get a speeding or a parking fine",
       past: "Got a speeding or parking fine",
@@ -1004,7 +1004,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 3,
-    category: travel,
+    category: categories.travel,
     description: {
       imperative: "Take a long-haul flight",
       past: "Taken a long-haul flight",
@@ -1013,7 +1013,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 128,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Be an accessory to a crime",
       past: "Been an accessory to a crime",
@@ -1022,7 +1022,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 129,
-    category: hardship,
+    category: categories.hardship,
     description: {
       imperative: "Leave a restaurant without paying",
       past: "Left a restaurant without paying",
