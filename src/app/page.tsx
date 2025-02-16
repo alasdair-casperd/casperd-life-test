@@ -41,7 +41,9 @@ export default function () {
 
       <div className="mt-10">
         <DataNotice />
-        <button className="primary-button w-full">Get Your Results</button>
+        <button className="button primary-button w-full">
+          Get Your Results
+        </button>
       </div>
     </PageContainer>
   );

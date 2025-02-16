@@ -1,24 +1,27 @@
 "use client";
 
-interface Props {
-  title: string;
-  subtitle?: string;
-  description?: string;
-}
-
 /**
  * A splash text component for displaying a large title alongside an optional subtitle and description.
  */
-export function SplashText({ title, subtitle, description }: Props) {
+export function SplashText() {
   return (
-    <div className="mx-4 mt-16 mb-8 flex max-w-[700px] flex-col items-start text-left sm:items-center sm:text-center md:mt-32 md:mb-24">
-      {subtitle && (
-        <span className="text-bold mb-2 text-[10pt] font-bold tracking-[4pt] uppercase md:mb-5 md:text-[18pt]">
-          {subtitle}
-        </span>
-      )}
-      <h1 className="md:mb-8">{title}</h1>
-      {description && <p className="md:text-xl">{description}</p>}
+    <div className="mx-4 mt-8 mb-16 flex max-w-[700px] flex-col items-start text-left sm:items-center sm:text-center">
+      <h1 className="md:mb-8">Casperd Life Test</h1>
+      <p className="md:text-xl">
+        Welcome to the Casperd Full Life Test! Our test aims to quantify how
+        much of life you have experienced so far. This includes both the good
+        and the bad, everything from holding a baby to losing a loved one.
+      </p>
+
+      <div className="mt-8 flex flex-row gap-6">
+        <a href="#" className="button primary-button">
+          Start the Test Now
+        </a>
+
+        <a href="#" className="button tertiary-button">
+          About the Test
+        </a>
+      </div>
     </div>
   );
 }

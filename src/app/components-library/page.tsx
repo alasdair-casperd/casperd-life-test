@@ -41,8 +41,8 @@ export default function () {
 
       <ComponentsLibrarySection title="Buttons">
         <div className="flex flex-row gap-4">
-          <button className="primary-button">Primary Button</button>
-          <button className="secondary-button">Secondary Button</button>
+          <button className="button primary-button">Primary Button</button>
+          <button className="button secondary-button">Secondary Button</button>
         </div>
       </ComponentsLibrarySection>
 
@@ -125,11 +125,7 @@ export default function () {
 
       <ComponentsLibrarySection title="Splash Text">
         <div className="flex w-full flex-col items-center">
-          <SplashText
-            title="Lorem Ipsum Dolor Sit"
-            subtitle="Consectetur Adipiscing Elit"
-            description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          ></SplashText>
+          <SplashText />
         </div>
       </ComponentsLibrarySection>
 

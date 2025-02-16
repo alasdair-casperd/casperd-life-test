@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent-50: #f0fdfa;
-  --color-accent-100: #ccfbf1;
-  --color-accent-200: #99f6e4;
-  --color-accent-300: #5eead4;
-  --color-accent-400: #2dd4bf;
-  --color-accent-500: #14b8a6;
-  --color-accent-600: #0d9488;
-  --color-accent-700: #0f766e;
-  --color-accent-800: #115e59;
-  --color-accent-900: #134e4a;
-  --color-accent-950: #042f2e;
+  --color-accent-50: oklch(0.977 0.013 236.62);
+  --color-accent-100: oklch(0.951 0.026 236.824);
+  --color-accent-200: oklch(0.901 0.058 230.902);
+  --color-accent-300: oklch(0.828 0.111 230.318);
+  --color-accent-400: oklch(0.746 0.16 232.661);
+  --color-accent-500: oklch(0.685 0.169 237.323);
+  --color-accent-600: oklch(0.588 0.158 241.966);
+  --color-accent-700: oklch(0.5 0.134 242.749);
+  --color-accent-800: oklch(0.443 0.11 240.79);
+  --color-accent-900: oklch(0.391 0.09 240.876);
+  --color-accent-950: oklch(0.293 0.066 243.157);
 
   --color-base-50: #f9fafb;
   --color-base-100: #f3f4f6;
@@ -29,9 +29,7 @@
 }
 
 h1 {
-  line-height: 33pt;
-
-  @apply mb-3 text-[30pt] font-bold md:text-[50pt];
+  @apply mb-3 text-4xl text-[30pt] font-bold md:text-[50pt];
 }
 
 h2 {
@@ -58,19 +56,26 @@ a {
   @apply cursor-pointer font-bold;
 }
 
-.primary-button {
-  @apply bg-accent-400 hover:bg-accent-500 cursor-pointer rounded-[12px] p-3 text-center font-bold text-white;
+.button {
+  @apply cursor-pointer rounded-[12px] p-3 text-center font-bold transition-colors duration-200;
 }
 
-.primary-button.disabled {
+.button.disabled {
   @apply cursor-auto opacity-50;
 }
 
-.secondary-button {
-  @apply bg-base-100 hover:bg-base-200 text-base-800 cursor-pointer rounded-[12px] p-3 text-center font-bold;
+.button.full-width {
+  @apply w-full;
 }
 
-.primary-button.full-width,
-.secondary-button.full-width {
-  @apply w-full;
+.primary-button {
+  @apply bg-base-800 hover:bg-base-700 text-white;
+}
+
+.secondary-button {
+  @apply bg-base-100 hover:bg-base-200 text-base-800;
+}
+
+.tertiary-button {
+  @apply text-base-800 border-base-300 hover:bg-base-50 border bg-white;
 }

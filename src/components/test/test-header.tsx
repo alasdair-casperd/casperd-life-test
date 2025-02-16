@@ -15,7 +15,7 @@ export function TestHeader({ button }: Props) {
     <div>
       <div className="mb-4 flex flex-col items-start justify-between sm:flex-row sm:items-center">
         <h2>Ready to take the test?</h2>
-        <a className="secondary-button" onClick={button.action}>
+        <a className="button secondary-button" onClick={button.action}>
           {button.text}
         </a>
       </div>
