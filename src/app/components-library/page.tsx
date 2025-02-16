@@ -13,6 +13,7 @@ import { categories } from "@/data/category.data";
 import { OverallProgressBar } from "@/components/results/progress-bars/overall-progress-bar";
 import { ProgressBar } from "@/components/results/progress-bars/progress-bar";
 import { CategoryProgressBar } from "@/components/results/progress-bars/category-progress-bar";
+import { Header } from "@/components/general/header";
 
 export default function () {
   return (
@@ -131,6 +132,10 @@ export default function () {
 
       <ComponentsLibrarySection title="Test Header">
         <TestHeader button={{ text: "Button", action: () => {} }}></TestHeader>
+      </ComponentsLibrarySection>
+
+      <ComponentsLibrarySection title="Site Header">
+        <Header />
       </ComponentsLibrarySection>
 
       <ComponentsLibrarySection title="Site Footer">

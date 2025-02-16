@@ -52,7 +52,7 @@ h4 {
   @apply my-1 font-bold;
 }
 
-a {
+link {
   @apply cursor-pointer font-bold;
 }
 

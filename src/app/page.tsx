@@ -1,8 +1,10 @@
 "use client";
 
 import { PageContainer } from "@/components/general/page-container";
+import { RoundedPanel } from "@/components/general/rounded-panel";
 import { DataNotice } from "@/components/test/data-notice";
 import { ExperienceToggle } from "@/components/test/experience-toggle";
+import { SplashText } from "@/components/test/splash-text";
 import { TestHeader } from "@/components/test/test-header";
 import { experiences } from "@/data/experience.data";
 import { Response } from "@/types/response";
@@ -16,35 +18,37 @@ export default function () {
   };
 
   return (
-    <PageContainer
-      title="Casperd Full Life Test"
-      subtitle="Welcome to the"
-      description="Welcome to the Casperd Full Life Test! Our test aims to quantify how much of life you have experienced so far. This includes both the good and the bad, everything from holding a baby to losing a loved one."
-    >
-      <TestHeader
-        button={{ text: "Start Test", action: () => {} }}
-      ></TestHeader>
+    <PageContainer>
+      <SplashText />
+      <RoundedPanel>
+        <TestHeader
+          button={{ text: "Reset Test", action: () => {} }}
+        ></TestHeader>
 
-      <div className="mt-10 flex flex-col gap-3">
-        {experiences.map((experience, index) => (
-          <ExperienceToggle
-            key={index}
-            experience={experience}
-            number={(index + 1).toString()}
-            completed={response[experience.id]}
-            toggleExperience={() => {
-              toggleExperience(experience.id);
-            }}
-          ></ExperienceToggle>
-        ))}
-      </div>
+        <div className="mt-10 flex flex-col gap-3">
+          {experiences.map((experience, index) => (
+            <ExperienceToggle
+              key={index}
+              experience={experience}
+              number={(index + 1).toString()}
+              completed={response[experience.id]}
+              toggleExperience={() => {
+                toggleExperience(experience.id);
+              }}
+            ></ExperienceToggle>
+          ))}
+        </div>
 
-      <div className="mt-10">
-        <DataNotice />
-        <button className="button primary-button w-full">
-          Get Your Results
-        </button>
-      </div>
+        <div className="mt-10">
+          <DataNotice />
+          <button className="button primary-button w-full">
+            Get Your Results
+          </button>
+        </div>
+      </RoundedPanel>
+      <RoundedPanel>
+        <h2>Results – Work in Progress</h2>
+      </RoundedPanel>
     </PageContainer>
   );
 }
