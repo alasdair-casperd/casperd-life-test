@@ -13,7 +13,7 @@ interface Props {
 export function TestHeader({ button }: Props) {
   return (
     <div>
-      <div className="flex sm:flex-row flex-col justify-between sm:items-center items-start mb-4">
+      <div className="mb-4 flex flex-col items-start justify-between sm:flex-row sm:items-center">
         <h2>Ready to take the test?</h2>
         <a className="secondary-button" onClick={button.action}>
           {button.text}

@@ -14,18 +14,18 @@ export function ProgressBar({ children, progress, className }: Props) {
     <div
       className={
         className +
-        " bg-base-100 overflow-hidden rounded-xl relative items-center w-full"
+        " bg-base-100 relative w-full items-center overflow-hidden rounded-xl"
       }
     >
-      <div className="ml-4 h-full flex flex-col justify-center text-lg font-bold z-10 text-base-500">
+      <div className="text-base-500 z-10 ml-4 flex h-full flex-col justify-center text-lg font-bold">
         {children}
       </div>
       {progress > 0 && (
         <div
-          className="absolute left-0 top-0 bg-accent-400 h-full overflow-hidden z-20"
+          className="bg-accent-400 absolute top-0 left-0 z-20 h-full overflow-hidden"
           style={{ width: Math.round(progress * 100).toString() + "%" }}
         >
-          <div className="ml-4 top-0 h-full flex flex-col justify-center text-lg font-bold z-50 text-base-100">
+          <div className="text-base-100 top-0 z-50 ml-4 flex h-full flex-col justify-center text-lg font-bold">
             {children}
           </div>
         </div>

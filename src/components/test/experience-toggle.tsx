@@ -22,18 +22,18 @@ export function ExperienceToggle({
   return (
     <div className="flex flex-row items-center gap-4">
       <div
-        className="w-full flex flex-row-reverse items-center justify-between gap-4 cursor-pointer bg-white border border-base-200 p-5 rounded-xl group hover:bg-base-50 duration-150 relative"
+        className="border-base-200 group hover:bg-base-50 relative flex w-full cursor-pointer flex-row-reverse items-center justify-between gap-4 rounded-xl border bg-white p-5 duration-150"
         onClick={toggleExperience}
       >
         <div
           className={`${
             completed ? "bg-accent-400" : "bg-base-100"
-          } w-6 h-6 rounded-md flex items-center justify-center p-1 duration-150`}
+          } flex h-6 w-6 items-center justify-center rounded-md p-1 duration-150`}
         >
           {completed && <IconCheck className="stroke-white stroke-[5px]" />}
         </div>
-        <div className="w-full flex flex-row justify-start gap-4">
-          <div className="font-bold text-base-300 w-6">{number}</div>
+        <div className="flex w-full flex-row justify-start gap-4">
+          <div className="text-base-300 w-6 font-bold">{number}</div>
           <span className="font-semibold">{experience.description.past}</span>
         </div>
       </div>

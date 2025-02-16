@@ -17,7 +17,7 @@ import { CategoryProgressBar } from "@/components/results/progress-bars/category
 export default function () {
   return (
     <div
-      className="flex flex-col w-full p-12 gap-8 min-h-screen"
+      className="flex min-h-screen w-full flex-col gap-8 p-12"
       style={{
         backgroundImage:
           "repeating-linear-gradient(-45deg, #f2f2f2 0 1px, transparent 1px 10px)",
@@ -124,7 +124,7 @@ export default function () {
       </ComponentsLibrarySection>
 
       <ComponentsLibrarySection title="Splash Text">
-        <div className="flex flex-col items-center w-full">
+        <div className="flex w-full flex-col items-center">
           <SplashText
             title="Lorem Ipsum Dolor Sit"
             subtitle="Consectetur Adipiscing Elit"

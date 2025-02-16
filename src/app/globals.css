@@ -1,21 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-accent-50: #f0fdfa;
+  --color-accent-100: #ccfbf1;
+  --color-accent-200: #99f6e4;
+  --color-accent-300: #5eead4;
+  --color-accent-400: #2dd4bf;
+  --color-accent-500: #14b8a6;
+  --color-accent-600: #0d9488;
+  --color-accent-700: #0f766e;
+  --color-accent-800: #115e59;
+  --color-accent-900: #134e4a;
+  --color-accent-950: #042f2e;
+
+  --color-base-50: #f9fafb;
+  --color-base-100: #f3f4f6;
+  --color-base-200: #e5e7eb;
+  --color-base-300: #d1d5db;
+  --color-base-400: #9ca3af;
+  --color-base-500: #6b7280;
+  --color-base-600: #4b5563;
+  --color-base-700: #374151;
+  --color-base-800: #1f2937;
+  --color-base-900: #111827;
+  --color-base-950: #030712;
+
+  --color-page_background: #f3f4f6;
+}
 
 h1 {
-  font-size: 30pt;
   line-height: 33pt;
 
-  @apply font-bold
-  mb-3;
+  @apply mb-3 text-[30pt] font-bold md:text-[50pt];
 }
 
 h2 {
   font-size: 30pt;
   line-height: 33pt;
 
-  @apply font-bold
-  mb-3;
+  @apply mb-3 font-bold;
 }
 
 h3 {
@@ -28,40 +51,23 @@ h3 {
 h4 {
   font-size: 14pt;
 
-  @apply font-bold
-  my-1;
+  @apply my-1 font-bold;
 }
 
 a {
-  @apply font-bold
-  cursor-pointer;
+  @apply cursor-pointer font-bold;
 }
 
 .primary-button {
-  @apply bg-accent-400
-  hover:bg-accent-500
-  text-white
-  font-bold
-  p-3
-  text-center
-  rounded-[12px]
-  cursor-pointer;
+  @apply bg-accent-400 hover:bg-accent-500 cursor-pointer rounded-[12px] p-3 text-center font-bold text-white;
 }
 
 .primary-button.disabled {
-  @apply cursor-auto
-  opacity-50;
+  @apply cursor-auto opacity-50;
 }
 
 .secondary-button {
-  @apply bg-base-100
-  hover:bg-base-200
-  text-base-800
-  font-bold
-  p-3
-  text-center
-  rounded-[12px]
-  cursor-pointer;
+  @apply bg-base-100 hover:bg-base-200 text-base-800 cursor-pointer rounded-[12px] p-3 text-center font-bold;
 }
 
 .primary-button.full-width,

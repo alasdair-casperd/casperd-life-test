@@ -25,7 +25,7 @@ export default function () {
         button={{ text: "Start Test", action: () => {} }}
       ></TestHeader>
 
-      <div className="flex flex-col gap-3 mt-10">
+      <div className="mt-10 flex flex-col gap-3">
         {experiences.map((experience, index) => (
           <ExperienceToggle
             key={index}

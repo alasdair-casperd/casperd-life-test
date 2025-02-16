@@ -15,12 +15,12 @@ interface Props {
 export function ExperienceHighlight({ experience, checked, frequency }: Props) {
   return (
     <div className="flex flex-row items-center gap-4">
-      <div className="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 sm:gap-4 bg-white border-2 border-base-200 p-3 rounded-xl group duration-150 relative">
+      <div className="border-base-200 group relative flex w-full flex-col items-start justify-between gap-1 rounded-xl border-2 bg-white p-3 duration-150 sm:flex-row sm:items-center sm:gap-4">
         <div className="flex flex-row items-center gap-3">
           <div
             className={`${
               checked ? "bg-accent-400" : "bg-base-200"
-            } w-5 h-5 rounded-md flex items-center justify-center p-1 duration-150`}
+            } flex h-5 w-5 items-center justify-center rounded-md p-1 duration-150`}
           >
             {checked && <IconCheck className="stroke-white stroke-[3px]" />}
             {!checked && <IconX className="stroke-accent-400 stroke-[3px]" />}
@@ -28,7 +28,7 @@ export function ExperienceHighlight({ experience, checked, frequency }: Props) {
           <span className="font-semibold">{experience.description.past}</span>
         </div>
         <div className="flex flex-row justify-start gap-4">
-          <div className="font-bold text-accent-400">
+          <div className="text-accent-400 font-bold">
             {(100 * frequency).toFixed(0)}% of users
           </div>
         </div>

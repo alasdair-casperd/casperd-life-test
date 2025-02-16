@@ -7,9 +7,9 @@ interface Props {
 
 export function ComponentsLibrarySection({ title, children }: Props) {
   return (
-    <div className="w-full border-base-300 border p-8 rounded-2xl relative bg-white">
+    <div className="border-base-300 relative w-full rounded-2xl border bg-white p-8">
       {title && (
-        <span className="font-bold font-mono text-base-400 absolute top-[-12px] bg-white px-3">
+        <span className="text-base-400 absolute top-[-12px] bg-white px-3 font-mono font-bold">
           {title}
         </span>
       )}

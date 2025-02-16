@@ -5,9 +5,9 @@ import { IconInfoCircle } from "@tabler/icons-react";
  */
 export function DataNotice() {
   return (
-    <div className="bg-base-100 p-4 rounded-xl my-4 flex flex-col sm:flex-row gap-2">
+    <div className="bg-base-100 my-4 flex flex-col gap-2 rounded-xl p-4 sm:flex-row">
       <div className="text-accent-400 text-2xl font-bold">
-        <IconInfoCircle className="w-8 h-8" />
+        <IconInfoCircle className="h-8 w-8" />
       </div>
       <div className="text-base-800">
         To provide more interesting feedback after the test, we collect

@@ -20,9 +20,9 @@ export function PageContainer({
 }: Props) {
   return (
     <div className="flex flex-col bg-slate-200">
-      <div className="min-h-[100vh] flex flex-col justify-between">
+      <div className="flex min-h-[100vh] flex-col justify-between">
         <div className="flex flex-col">
-          <div className="bg-accent-400 text-white w-full pb-[100px] flex flex-col items-center">
+          <div className="bg-accent-400 flex w-full flex-col items-center pb-[100px] text-white">
             <SplashText
               title={title}
               subtitle={subtitle}
@@ -34,7 +34,7 @@ export function PageContainer({
             viewBox="0 0 2243 128"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full fill-accent-400 -translate-y-1 rotate-180 h-[150px]"
+            className="fill-accent-400 h-[150px] w-full -translate-y-1 rotate-180"
           >
             <path
               className="wave-path"
@@ -42,9 +42,9 @@ export function PageContainer({
               id="Path-2-Copy"
             ></path>
           </svg>
-          <div className="w-full flex flex-row justify-center mt-[-250px] z-50 mb-12">
+          <div className="z-50 mt-[-250px] mb-12 flex w-full flex-row justify-center">
             <div className="w-full max-w-[800px]">
-              <div className="bg-white rounded-2xl p-4 sm:p-8 mb-16">
+              <div className="mb-16 rounded-2xl bg-white p-4 sm:p-8">
                 {children}
               </div>
             </div>
