@@ -27,10 +27,10 @@ export function ExperienceToggle({
       >
         <div
           className={`${
-            completed ? "bg-accent-400" : "bg-base-100"
+            completed ? "bg-base-500" : "bg-base-100"
           } flex h-6 w-6 items-center justify-center rounded-md p-1 duration-150`}
         >
-          {completed && <IconCheck className="stroke-white stroke-[5px]" />}
+          {completed && <IconCheck className="stroke-white stroke-[3px]" />}
         </div>
         <div className="flex w-full flex-row justify-start gap-4">
           <div className="text-base-300 w-6 font-bold">{number}</div>
