@@ -44,6 +44,8 @@ const hardship: Category = {
   icon: <IconScale />,
 };
 
+const all = [love, travel, activity, achievements, skills, hardship];
+
 export const categories = {
   love,
   travel,
@@ -51,4 +53,5 @@ export const categories = {
   achievements,
   skills,
   hardship,
+  all,
 };
