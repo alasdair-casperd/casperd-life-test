@@ -171,8 +171,8 @@ export const experiences: Experience[] = [
     id: 24,
     category: categories.travel,
     description: {
-      imperative: "categories.travel by boat",
-      past: "categories.traveled by boat",
+      imperative: "Travel by boat",
+      past: "Travelled by boat",
     },
     details: "",
   },
@@ -318,8 +318,8 @@ export const experiences: Experience[] = [
     id: 40,
     category: categories.hardship,
     description: {
-      imperative: "Lose a categories.loved one",
-      past: "Lost a categories.loved one",
+      imperative: "Lose a loved one",
+      past: "Lost a loved one",
     },
     details: "",
   },
@@ -354,9 +354,8 @@ export const experiences: Experience[] = [
     id: 45,
     category: categories.love,
     description: {
-      imperative:
-        "Confess your categories.love to someone outside of a relationship",
-      past: "Confessed your categories.love to someone outside of a relationship",
+      imperative: "Confess romantic love to someone outside of a relationship",
+      past: "Confessed romantic love to someone outside of a relationship",
     },
     details: "",
   },
@@ -365,8 +364,8 @@ export const experiences: Experience[] = [
     category: categories.love,
     description: {
       imperative:
-        "Have someone confess their categories.love to you outside of a relationship",
-      past: "Had someone confess their categories.love to you outside a relationship",
+        "Have someone confess their romantic love to you outside of a relationship",
+      past: "Had someone confess their romantic love to you outside a relationship",
     },
     details: "",
   },
