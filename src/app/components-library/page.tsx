@@ -18,10 +18,10 @@ import { Header } from "@/components/general/header";
 export default function () {
   return (
     <div
-      className="flex min-h-screen w-full flex-col gap-8 p-12"
+      className="bg-base-900 flex min-h-screen w-full flex-col gap-8 p-12"
       style={{
         backgroundImage:
-          "repeating-linear-gradient(-45deg, #f2f2f2 0 1px, transparent 1px 10px)",
+          "repeating-linear-gradient(-45deg, #222222 0 1px, transparent 1px 10px)",
       }}
     >
       <ComponentsLibrarySection title="Headings">

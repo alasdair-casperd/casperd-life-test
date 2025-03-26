@@ -5,7 +5,7 @@ export const example_results: Results = {
   average_overall_score: 0.54,
   category_averages: {
     love: 0.5,
-    travel: 0.2,
+    travel: 0.02,
     activity: 0.35,
     achievements: 0.22,
     skills: 0.94,

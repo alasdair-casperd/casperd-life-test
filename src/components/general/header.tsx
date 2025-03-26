@@ -5,19 +5,19 @@ import Link from "next/link";
  */
 export function Header() {
   return (
-    <div className="text-base-800/20 flex w-full flex-row justify-center gap-12 p-8 text-sm">
-      <Link href="/" className="hover:text-base-800/50">
+    <div className="text-base-200/50 flex w-full flex-row justify-center gap-12 p-8 text-sm">
+      <Link href="/" className="hover:text-white">
         Home
       </Link>
-      <Link href="/statistics" className="hover:text-base-800/50">
+      <Link href="/statistics" className="hover:text-white">
         Take the Test
       </Link>
-      <Link href="/statistics" className="hover:text-base-800/50">
+      <Link href="/statistics" className="hover:text-white">
         Statistics
       </Link>
       <a
         href="mailto:hello@alasdaircasperd.com?subject=Contact"
-        className="hover:text-base-800/50"
+        className="hover:text-white"
       >
         Contact
       </a>

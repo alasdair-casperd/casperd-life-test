@@ -12,7 +12,7 @@ interface Props {
 export function OverallProgressBar({ progress }: Props) {
   const progress_text = progress ? `${(progress * 10).toFixed(1)}` : "0.0";
   return (
-    <ProgressBar progress={progress ?? 0} className="h-24">
+    <ProgressBar progress={progress ?? 0} className="h-16">
       {progress_text}
     </ProgressBar>
   );

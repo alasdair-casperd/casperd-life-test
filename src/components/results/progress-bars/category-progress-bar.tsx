@@ -16,7 +16,7 @@ export function CategoryProgressBar({ category, progress }: Props) {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="flex flex-row gap-2">
-        <div className="text-accent-400 text-2xl">{category.icon}</div>
+        <div className="text-2xl text-white">{category.icon}</div>
         <div className="font-semibold md:w-[260px]">{category.name}</div>
       </div>
       <ProgressBar progress={progress ?? 0} className="h-8">

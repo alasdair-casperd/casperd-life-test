@@ -25,7 +25,7 @@ export function CategoryComparisonBar({
     <div className="flex flex-col">
       <div className="mb-2 flex flex-col items-start justify-between font-semibold sm:flex-row sm:items-center">
         <div className="flex flex-row gap-2">
-          <div className="text-accent-400">{category.icon}</div>
+          <div className="text-white">{category.icon}</div>
           <div>{category.name}</div>
         </div>
         <div className="text-base-400">
@@ -34,11 +34,11 @@ export function CategoryComparisonBar({
       </div>
       <div className="flex flex-col">
         <div
-          className={`bg-base-100 relative h-4 w-full items-center overflow-hidden rounded-t-xl`}
+          className={`bg-base-950/60 relative h-4 w-full items-center overflow-hidden rounded-t-xl`}
         >
           {average_progress > 0 && (
             <div
-              className="bg-accent-400/20 absolute top-0 left-0 z-20 h-full overflow-hidden"
+              className="bg-base-100/15 absolute top-0 left-0 z-20 h-full overflow-hidden"
               style={{
                 width: Math.round(average_progress * 100).toString() + "%",
               }}
@@ -46,11 +46,11 @@ export function CategoryComparisonBar({
           )}
         </div>
         <div
-          className={`bg-base-100 relative h-4 w-full items-center overflow-hidden rounded-b-xl`}
+          className={`bg-base-950/60 relative h-4 w-full items-center overflow-hidden rounded-b-xl`}
         >
           {user_progress > 0 && (
             <div
-              className="bg-accent-400 absolute top-0 left-0 z-20 h-full overflow-hidden"
+              className="absolute top-0 left-0 z-20 h-full overflow-hidden bg-white"
               style={{
                 width: Math.round(user_progress * 100).toString() + "%",
               }}

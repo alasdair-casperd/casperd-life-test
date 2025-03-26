@@ -5,11 +5,11 @@ import { IconInfoCircle } from "@tabler/icons-react";
  */
 export function DataNotice() {
   return (
-    <div className="bg-base-100 my-4 flex flex-col gap-2 rounded-xl p-4 sm:flex-row">
-      <div className="text-accent-400 text-2xl font-bold">
+    <div className="bg-base-900/30 border-base-300 my-4 flex flex-col gap-4 rounded-xl border p-5 sm:flex-row">
+      <div className="text-2xl font-bold text-white">
         <IconInfoCircle className="h-8 w-8" />
       </div>
-      <div className="text-base-800">
+      <div className="text-base-300">
         To provide more interesting feedback after the test, we collect
         anonymised statistics on test scores. No personal data is collected and
         your answers are never individually stored. By clicking the button
