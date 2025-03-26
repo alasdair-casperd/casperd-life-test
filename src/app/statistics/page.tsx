@@ -2,13 +2,12 @@
 
 import { PageContainer } from "@/components/general/page-container";
 import { RoundedPanel } from "@/components/general/rounded-panel";
-import { CategoryProgressBar } from "@/components/results/progress-bars/category-progress-bar";
 import { OverallProgressBar } from "@/components/results/progress-bars/overall-progress-bar";
-import { categories } from "@/data/category.data";
 import { example_statistics } from "@/data/statistics.data";
-import { StatisticsSection } from "./statistics-section";
+import { DataSection } from "../../components/results/data-section";
 import { experiences } from "@/data/experience.data";
 import { ExperienceHighlight } from "@/components/results/experience-highlight";
+import { CategoryScores } from "@/components/results/category-scores";
 
 export default function () {
   /**
@@ -31,7 +30,7 @@ export default function () {
       <h1>Statistics</h1>
       <RoundedPanel>
         <div className="flex flex-col gap-12">
-          <StatisticsSection title="Average Overall Score">
+          <DataSection title="Average Overall Score">
             <p className="pb-4">
               As of {current_date} the test has received{" "}
               {example_statistics.total_responses} responses, which have
@@ -42,20 +41,14 @@ export default function () {
                 progress={example_statistics.average_overall_score}
               />
             </div>
-          </StatisticsSection>
-          <StatisticsSection title="Average Category Scores">
-            <div className="flex flex-col gap-3">
-              {categories.all.map((category, index) => (
-                <CategoryProgressBar
-                  key={index}
-                  category={category}
-                  progress={example_statistics.category_averages[category.id]}
-                />
-              ))}
-            </div>
-          </StatisticsSection>
+          </DataSection>
+          <DataSection title="Average Category Scores">
+            <CategoryScores
+              category_averages={example_statistics.category_averages}
+            />
+          </DataSection>
 
-          <StatisticsSection title="Experiences Completion Frequencies">
+          <DataSection title="Experiences Completion Frequencies">
             <p className="pb-4">
               The experiences below are sorted from most to least common,
               according to our data.
@@ -73,7 +66,7 @@ export default function () {
                 />
               ))}
             </div>
-          </StatisticsSection>
+          </DataSection>
         </div>
       </RoundedPanel>
     </PageContainer>
