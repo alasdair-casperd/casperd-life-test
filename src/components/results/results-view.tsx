@@ -27,7 +27,6 @@ export function ResultsView({ results, statistics }: Props) {
 
   return (
     <div className="flex flex-col gap-12">
-      <h2>Your Results</h2>
       <DataSection title="Overall Score">
         <p>
           Your overall life experience score is 5.6 out of a maximum of 10. This
