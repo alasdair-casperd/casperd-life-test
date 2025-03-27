@@ -4,7 +4,7 @@ import { categories } from "@/data/category.data";
 import { CategoryProgressBar } from "./progress-bars/category-progress-bar";
 
 interface Props {
-  category_averages: { [key: string]: number };
+  category_averages: { [key: string]: { score: number; completion: number } };
 }
 
 /**
@@ -17,7 +17,7 @@ export function CategoryScores({ category_averages }: Props) {
         <CategoryProgressBar
           key={index}
           category={category}
-          progress={category_averages[category.id]}
+          progress={category_averages[category.id].completion}
         />
       ))}
     </div>

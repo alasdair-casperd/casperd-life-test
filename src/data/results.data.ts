@@ -2,27 +2,48 @@ import { Results } from "@/types/results";
 import { experiences } from "./experience.data";
 
 export const example_results: Results = {
-  average_overall_score: 0.54,
-  category_averages: {
-    love: 0.5,
-    travel: 0.02,
-    activity: 0.35,
-    achievements: 0.22,
-    skills: 0.94,
-    hardship: 0.54,
+  overall_score: 5.4,
+  categories: {
+    love: {
+      score: 54,
+      completion: 0.54,
+    },
+    travel: {
+      score: 2,
+      completion: 0.02,
+    },
+    activity: {
+      score: 35,
+      completion: 0.35,
+    },
+    achievements: {
+      score: 22,
+      completion: 0.22,
+    },
+    skills: {
+      score: 94,
+      completion: 0.94,
+    },
+    hardship: {
+      score: 54,
+      completion: 0.54,
+    },
   },
-  most_common_experiences_missed: [
-    experiences[0],
-    experiences[1],
-    experiences[2],
-    experiences[3],
-    experiences[4],
-  ],
-  rarest_experiences_completed: [
-    experiences[5],
-    experiences[6],
-    experiences[7],
-    experiences[8],
-    experiences[9],
-  ],
+  highlights: {
+    rarest_completed: [
+      experiences[5],
+      experiences[6],
+      experiences[7],
+      experiences[8],
+      experiences[9],
+    ],
+    most_common_missed: [
+      experiences[0],
+      experiences[1],
+      experiences[2],
+      experiences[3],
+      experiences[4],
+    ],
+  },
+  original_response: {},
 };

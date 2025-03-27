@@ -14,13 +14,13 @@ interface Props {
 
 export function ResultsView({ results, statistics }: Props) {
   const most_common_experiences_missed_data =
-    results.most_common_experiences_missed.map((x) => ({
+    results.highlights.most_common_missed.map((x) => ({
       experience: x,
       completed: true,
     }));
 
   const rarest_experiences_completed_data =
-    results.rarest_experiences_completed.map((x) => ({
+    results.highlights.rarest_completed.map((x) => ({
       experience: x,
       completed: false,
     }));
@@ -38,7 +38,7 @@ export function ResultsView({ results, statistics }: Props) {
       </DataSection>
 
       <DataSection title="Category Completion">
-        <CategoryScores category_averages={results.category_averages} />
+        <CategoryScores category_averages={results.categories} />
       </DataSection>
       <DataSection title="Your Rarest Experiences">
         <p>
@@ -67,7 +67,7 @@ export function ResultsView({ results, statistics }: Props) {
           {categories.all.map((category, index) => (
             <CategoryComparisonBar
               category={category}
-              user_progress={results.category_averages[category.id]}
+              user_progress={results.categories[category.id].completion}
               average_progress={statistics.category_averages[category.id]}
               key={index}
             />

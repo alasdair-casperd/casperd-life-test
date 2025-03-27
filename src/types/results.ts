@@ -1,8 +1,15 @@
 import { Experience } from "./experience";
+import { Response } from "./response";
 
+/**
+ * A user's quiz results data, generated from a response object and a statistics object.
+ */
 export type Results = {
-  average_overall_score: number;
-  category_averages: { [key: string]: number };
-  rarest_experiences_completed: Experience[];
-  most_common_experiences_missed: Experience[];
-}
+  overall_score: number;
+  categories: { [key: string]: { score: number; completion: number } };
+  highlights: {
+    rarest_completed: Experience[];
+    most_common_missed: Experience[];
+  };
+  original_response: Response;
+};
