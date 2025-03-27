@@ -28,7 +28,7 @@ export function ExperienceHighlight({ experience, checked, frequency }: Props) {
           <span className="font-semibold">{experience.description.past}</span>
         </div>
         <div className="flex flex-row justify-start gap-4">
-          <div className="text-base-400 font-bold">
+          <div className="font-bold text-white/50">
             {(100 * frequency).toFixed(0)}% of users
           </div>
         </div>

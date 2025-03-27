@@ -53,7 +53,7 @@ h4 {
 }
 
 p {
-  @apply text-base-300;
+  @apply text-white/70;
 }
 
 link {
