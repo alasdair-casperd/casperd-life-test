@@ -1,4 +1,4 @@
-import { IconDiamond, IconDiamonds } from "@tabler/icons-react";
+import { IconDiamonds } from "@tabler/icons-react";
 import Link from "next/link";
 
 /**

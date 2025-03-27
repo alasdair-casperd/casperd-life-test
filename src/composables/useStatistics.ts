@@ -4,7 +4,7 @@ import { Response } from "@/types/response";
 import { Statistics } from "@/types/statistics";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously } from "firebase/auth";
-import { getDatabase, ref, child, set, get, update } from "firebase/database";
+import { getDatabase, ref, get, update } from "firebase/database";
 import { useScoringAlgorithm } from "./useScoringAlgorithm";
 import { categories } from "@/data/category.data";
 

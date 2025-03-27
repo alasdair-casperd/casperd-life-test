@@ -15,7 +15,7 @@ import { ProgressBar } from "@/components/results/progress-bars/progress-bar";
 import { CategoryProgressBar } from "@/components/results/progress-bars/category-progress-bar";
 import { Header } from "@/components/general/header";
 
-export default function () {
+export default function Page() {
   return (
     <div
       className="bg-base-900 flex min-h-screen w-full flex-col gap-8 p-12"
