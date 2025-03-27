@@ -16,8 +16,8 @@ export default function ({ statistics }: Props) {
    * All experiences, sorted by completion frequency in descending order.
    */
   const sorted_experiences = experiences.sort((a, b) => {
-    const f_a = statistics.experience_frequencies[a.id] ?? 0;
-    const f_b = statistics.experience_frequencies[b.id] ?? 0;
+    const f_a = statistics.experiences[a.id].frequency ?? 0;
+    const f_b = statistics.experiences[b.id].frequency ?? 0;
     return f_b - f_a;
   });
 
@@ -68,7 +68,7 @@ export default function ({ statistics }: Props) {
               key={index}
               checked={true}
               experience={experience}
-              frequency={statistics.experience_frequencies[experience.id] ?? 0}
+              frequency={statistics.experiences[experience.id].frequency ?? 0}
             />
           ))}
         </div>

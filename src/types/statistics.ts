@@ -5,5 +5,5 @@ export type Statistics = {
   total_responses: number;
   average_overall_score: number;
   category_averages: { [key: string]: number };
-  experience_frequencies: { [key: number]: number };
+  experiences: { [key: number]: { frequency: number; completions: number } };
 };

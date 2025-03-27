@@ -33,8 +33,8 @@ export const useScoringAlgorithm = () => {
       .filter((e) => response[e.id])
       .sort(
         (a, b) =>
-          statistics.experience_frequencies[a.id] -
-          statistics.experience_frequencies[b.id],
+          statistics.experiences[a.id].frequency -
+          statistics.experiences[b.id].frequency,
       )
       .slice(0, 5);
 
@@ -42,8 +42,8 @@ export const useScoringAlgorithm = () => {
       .filter((e) => !response[e.id])
       .sort(
         (a, b) =>
-          statistics.experience_frequencies[b.id] -
-          statistics.experience_frequencies[a.id],
+          statistics.experiences[b.id].frequency -
+          statistics.experiences[a.id].frequency,
       )
       .slice(0, 5);
 

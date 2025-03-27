@@ -5,6 +5,8 @@ import { Statistics } from "@/types/statistics";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInAnonymously } from "firebase/auth";
 import { getDatabase, ref, child, set, get, update } from "firebase/database";
+import { useScoringAlgorithm } from "./useScoringAlgorithm";
+import { categories } from "@/data/category.data";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBiE8HANYWoRuATQTNs5hNFT9n3wz0RKjw", // Note: This key is safe to expose as the database is protected by authentication rules.
@@ -57,11 +59,16 @@ export const useStatistics = () => {
       const category_averages = data.categoryAverages || {};
       const experience_completions = data.totalExperienceCompletions || {};
 
-      const experience_frequencies: { [key: string]: number } = {};
+      const experience_data: {
+        [key: string]: { frequency: number; completions: number };
+      } = {};
 
       for (let experience of experiences) {
         let completions = experience_completions[experience.id] || 0;
-        experience_frequencies[experience.id] = completions / total_responses;
+        experience_data[experience.id] = {
+          frequency: completions / total_responses,
+          completions,
+        };
       }
 
       for (let category in category_averages) {
@@ -72,7 +79,7 @@ export const useStatistics = () => {
         total_responses,
         average_overall_score: average_overall_score / 10,
         category_averages,
-        experience_frequencies,
+        experiences: experience_data,
       };
     } catch (error) {
       console.error("Error updating firebase database:", error);
@@ -85,7 +92,58 @@ export const useStatistics = () => {
    * @param response The response to the test to update the statistics with.
    */
   const updateStatistics = async (response: Response) => {
-    // TODO
+    // Abort if the response contains fewer than three checked experiences. This is to prevent accidental or incomplete submissions from affecting the statistics.
+    if (Object.values(response).filter((x) => x).length < 3) return;
+
+    const statistics = await fetchStatistics();
+    const reference = ref(getDatabase());
+
+    const results = useScoringAlgorithm().calculateResults(
+      response,
+      statistics,
+    );
+
+    const new_total_responses = statistics.total_responses + 1;
+
+    const new_average_overall_score = newAverage(
+      statistics.average_overall_score * 10,
+      statistics.total_responses,
+      results.overall_score * 10,
+    );
+
+    const new_category_averages: any = {};
+    for (const category of categories.all) {
+      const old_average = statistics.category_averages[category.id] * 100;
+      const new_average = newAverage(
+        old_average,
+        statistics.total_responses,
+        results.categories[category.id].completion * 100,
+      );
+      new_category_averages[category.id] = new_average;
+    }
+
+    const new_total_experience_completions: any = {};
+    for (const experience of experiences) {
+      new_total_experience_completions[experience.id] =
+        statistics.experiences[experience.id].completions + 1;
+    }
+
+    const updated_data = {
+      totalResponses: new_total_responses,
+      averageOverallScore: new_average_overall_score,
+      categoryAverages: new_category_averages,
+      totalExperienceCompletions: new_total_experience_completions,
+    };
+
+    await update(reference, updated_data);
+  };
+
+  const newAverage = (
+    current_average: number,
+    current_count: number,
+    new_value: number,
+  ) => {
+    return (current_average * current_count + new_value) / (current_count + 1);
   };
 
   return {

@@ -20,7 +20,7 @@ export function ExperienceHighlightGroup({ data, statistics }: Props) {
         <ExperienceHighlight
           experience={item.experience}
           checked={item.completed}
-          frequency={statistics.experience_frequencies[item.experience.id] ?? 0}
+          frequency={statistics.experiences[item.experience.id].frequency ?? 0}
           key={index}
         />
       ))}

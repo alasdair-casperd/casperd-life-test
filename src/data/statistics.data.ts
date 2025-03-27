@@ -11,14 +11,14 @@ export const example_statistics: Statistics = {
     skills: 0.94,
     hardship: 0.54,
   },
-  experience_frequencies: {
-    1: 0.35,
-    2: 0.22,
-    3: 0.94,
-    4: 0.54,
-    5: 0.5,
-    6: 0.2,
-    7: 0.35,
-    8: 0.22,
+  experiences: {
+    1: { frequency: 0.35, completions: 100 },
+    2: { frequency: 0.22, completions: 100 },
+    3: { frequency: 0.94, completions: 100 },
+    4: { frequency: 0.54, completions: 100 },
+    5: { frequency: 0.5, completions: 100 },
+    6: { frequency: 0.2, completions: 100 },
+    7: { frequency: 0.35, completions: 100 },
+    8: { frequency: 0.22, completions: 100 },
   },
 };
