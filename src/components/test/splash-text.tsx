@@ -4,6 +4,14 @@
  * A splash text component for displaying a large title alongside an optional subtitle and description.
  */
 export function SplashText() {
+  const scrollToTest = () => {
+    if (document) {
+      document
+        .getElementById("life-test")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="my-20 flex w-full flex-col items-center">
       <div className="mx-4 mt-8 mb-16 flex max-w-[700px] flex-col items-start text-left sm:items-center sm:text-center">
@@ -16,13 +24,9 @@ export function SplashText() {
         </p>
 
         <div className="mt-8 flex flex-row gap-6">
-          <a href="#" className="button primary-button">
+          <div className="button primary-button" onClick={scrollToTest}>
             Start the Test Now
-          </a>
-
-          <a href="#" className="button secondary-button">
-            About the Test
-          </a>
+          </div>
         </div>
       </div>
     </div>

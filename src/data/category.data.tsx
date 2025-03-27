@@ -10,37 +10,37 @@ import { Category } from "../types/category";
 
 const love: Category = {
   id: "love",
-  name: "Love",
+  name: "Relationships, Family and Love",
   icon: <IconHeart />,
 };
 
 const travel: Category = {
   id: "travel",
-  name: "Travel",
+  name: "Travel and World Experience",
   icon: <IconGlobe />,
 };
 
 const activity: Category = {
   id: "activity",
-  name: "Activity",
+  name: "Activity and Sports",
   icon: <IconBallTennis />,
 };
 
 const achievements: Category = {
   id: "achievements",
-  name: "Achievements",
+  name: "Career and Achievements",
   icon: <IconTie />,
 };
 
 const skills: Category = {
   id: "skills",
-  name: "Skills",
+  name: "Skills and Creativity",
   icon: <IconPalette />,
 };
 
 const hardship: Category = {
   id: "hardship",
-  name: "Hardship",
+  name: "Hardship and Suffering",
   icon: <IconScale />,
 };
 

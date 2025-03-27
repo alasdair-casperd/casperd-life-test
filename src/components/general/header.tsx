@@ -10,9 +10,6 @@ export function Header() {
         Home
       </Link>
       <Link href="/statistics" className="hover:text-white">
-        Take the Test
-      </Link>
-      <Link href="/statistics" className="hover:text-white">
         Statistics
       </Link>
       <a

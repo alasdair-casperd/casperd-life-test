@@ -61,7 +61,7 @@ export function TestView() {
   };
 
   return (
-    <div>
+    <div id="life-test" className="scroll-mt-10">
       <TestHeader
         button={{ text: "Reset Test", action: resetTest }}
       ></TestHeader>

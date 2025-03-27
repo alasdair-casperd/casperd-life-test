@@ -6,7 +6,6 @@ import { ResultsView } from "@/components/results/results-view";
 import { useResponse } from "@/composables/useResponse";
 import { useScoringAlgorithm } from "@/composables/useScoringAlgorithm";
 import { useStatistics } from "@/composables/useStatistics";
-import { example_statistics } from "@/data/statistics.data";
 import { Results } from "@/types/results";
 import { Statistics } from "@/types/statistics";
 import { useRouter } from "next/navigation";
@@ -51,8 +50,8 @@ export default function () {
       <h1 className="py-20">Your Results</h1>
       <RoundedPanel>
         {loading && <p>Loading...</p>}
-        {!loading && results && (
-          <ResultsView results={results} statistics={example_statistics} />
+        {!loading && results && statistics && (
+          <ResultsView results={results} statistics={statistics} />
         )}
       </RoundedPanel>
     </PageContainer>

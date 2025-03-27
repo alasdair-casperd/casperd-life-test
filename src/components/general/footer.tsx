@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <div className="group bg-base-950 flex w-full flex-col items-center justify-center gap-4 pt-8 pb-12 text-white">
       <Link href="/">
-        <IconDiamonds className="text-accent-400 h-8 w-8" />
+        <IconDiamonds className="h-8 w-8 text-pink-400" />
       </Link>
 
       <div className="text-base-100 flex flex-col items-center justify-center gap-8 text-xs sm:my-4 sm:flex-row sm:gap-4">
@@ -24,7 +24,7 @@ export function Footer() {
 
       <div className="text-base-500 text-xs font-normal">
         ©{" "}
-        <a className="font-normal" href="https://alasdaircasperd.com">
+        <a className="font-normal" href="https://www.alasdaircasperd.com">
           Alasdair Casperd
         </a>{" "}
         2025

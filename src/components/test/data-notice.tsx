@@ -6,7 +6,7 @@ import { IconInfoCircle } from "@tabler/icons-react";
 export function DataNotice() {
   return (
     <div className="bg-base-900/30 border-base-300 my-4 flex flex-col gap-4 rounded-xl border p-5 sm:flex-row">
-      <div className="text-2xl font-bold text-white">
+      <div className="text-2xl font-light text-white">
         <IconInfoCircle className="h-8 w-8" />
       </div>
       <div className="text-base-300">

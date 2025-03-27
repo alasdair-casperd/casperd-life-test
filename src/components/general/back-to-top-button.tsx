@@ -15,7 +15,7 @@ export function BackToTopButton() {
 
   return (
     <div
-      className="z-200 fixed cursor-pointer rounded-xl bg-base-100 flex items-center justify-center text-base-500 hover:text-accent right-6 bottom-6 w-12 h-12 hover:scale-[1.05] transition-4"
+      className="bg-base-100 text-base-950 hover:text-accent transition-4 fixed right-6 bottom-6 z-200 flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl hover:scale-[1.05]"
       onClick={scrollToTop}
     >
       <IconArrowUp className="stroke-[3px]" />
