@@ -26,7 +26,7 @@ export const useScoringAlgorithm = () => {
   ): Results => {
     const category_results = calculateCategoryResults(response);
     const overall_score = calculateOverallScore(
-      Object.values(category_results).map((c) => c.score),
+      Object.values(category_results).map((c) => c.completion),
     );
 
     const rarest_completed = experiences

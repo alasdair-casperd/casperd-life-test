@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { RaysGradient } from "../graphics/rays-gradient";
-import { SplashText } from "../test/splash-text";
+"use client";
+
 import { BackToTopButton } from "./back-to-top-button";
 import { Footer } from "./footer";
 import { Header } from "./header";

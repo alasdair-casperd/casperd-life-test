@@ -14,9 +14,8 @@ export const useStatistics = () => {
   /**
    * Update the statistics with after receiving a new response to the test.
    * @param response The response to the test to update the statistics with.
-   * @param current A snapshot of the current statistics.
    */
-  const updateStatistics = async (response: Response, current: Statistics) => {
+  const updateStatistics = async (response: Response) => {
     // TODO
   };
 
